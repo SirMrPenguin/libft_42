@@ -6,7 +6,7 @@
 /*   By: joabotel <joabotel@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/09 12:46:36 by joabotel          #+#    #+#             */
-/*   Updated: 2025/04/10 15:48:49 by joabotel         ###   ########.fr       */
+/*   Updated: 2025/04/10 17:22:39 by joabotel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,14 +27,14 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	}
 	return (ptr);
 }
-
+/*
 #include <stdio.h>
 #include <stdlib.h>
 
 int main()
 {
-    size_t nmemb = 5;
-    size_t size = 4;
+    size_t nmemb = 10;
+    size_t size = 1;
     unsigned char *ptr = ft_calloc(nmemb, size);
 
     if (!ptr)
@@ -52,9 +52,4 @@ int main()
     free(ptr);
     return (0);
 }
-/*
-int	main(){
-	unsigned char *ptr;
-	ptr = ft_calloc(2, 2);
-	free (ptr);
-}*/
+*/

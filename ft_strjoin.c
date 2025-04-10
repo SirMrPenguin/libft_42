@@ -1,45 +1,51 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_substr.c                                        :+:      :+:    :+:   */
+/*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: joabotel <joabotel@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/10 15:19:39 by joabotel          #+#    #+#             */
-/*   Updated: 2025/04/10 17:56:27 by joabotel         ###   ########.fr       */
+/*   Created: 2025/04/10 17:59:24 by joabotel          #+#    #+#             */
+/*   Updated: 2025/04/10 18:48:25 by joabotel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_substr(char const *s, unsigned int start, size_t len)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
-	size_t	i;
+	int		i;
+	int		j;
+	size_t	s1_len;
+	size_t	s2_len;
 	char	*str;
 
 	i = 0;
-	if (!s)
-		return (NULL);
-	if (start > ft_strlen(s))
-		return (ft_strdup(""));
-	if (len > ft_strlen(s + start))
-		len = ft_strlen(s + start);
-	str = ft_calloc(len + 1, sizeof(char));
+	j = 0;
+	s1_len = ft_strlen(s1);
+	s2_len = ft_strlen(s2);
+	str = ft_calloc((s1_len + s2_len + 1), sizeof(char));
 	if (!str)
 		return (NULL);
-	while (i < len)
+	while (s1[i])
 	{
-		str[i] = s[start + i];
+		str[i] = s1[i];
 		i++;
+	}
+	while (s2[j])
+	{
+		str[i] = s2[j];
+		i++;
+		j++;
 	}
 	return (str);
 }
 /*
 #include <stdio.h>
-int		main()
-{
-	char	*str = "Bonjour comment ca va?";
-	char	*s = ft_substr(str, 5, 8);
-
-	printf("%s\n", s);
+int	main(){
+	const char *s1 = "Hello, ";
+	const char *s2 = "World!";
+	char *new = ft_strjoin(s1, s2);
+	printf("%s\n", new);
+	free (new);
 }*/

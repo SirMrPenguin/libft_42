@@ -6,7 +6,7 @@
 /*   By: joabotel <joabotel@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/02 18:15:13 by joabotel          #+#    #+#             */
-/*   Updated: 2025/04/10 15:24:06 by joabotel         ###   ########.fr       */
+/*   Updated: 2025/04/10 19:13:17 by joabotel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,9 @@ void	*ft_calloc(size_t count, size_t size);
 char	*ft_strdup(const char *s1);
 
 //part 2 adicional functions
+char	*ft_substr(const char *s, unsigned int start, size_t len);
+char	*ft_strtrim(const char *s1, const char *set);
+char	*ft_strjoin(const char *s1, const char *s2);
 void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 
 //fd functions
