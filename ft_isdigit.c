@@ -6,7 +6,7 @@
 /*   By: joabotel <joabotel@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/02 18:42:26 by joabotel          #+#    #+#             */
-/*   Updated: 2025/04/02 18:45:51 by joabotel         ###   ########.fr       */
+/*   Updated: 2025/04/12 16:18:03 by joabotel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,3 +17,16 @@ int	ft_isdigit(int c)
 	else
 		return (0);
 }
+/*
+#include <stdio.h>
+int	main()
+{
+	int a = 'a';
+	int b = 'A';
+	int c = '5';
+	int d = -42;
+	printf("%d\n", ft_isdigit(a));
+	printf("%d\n", ft_isdigit(b));
+	printf("%d\n", ft_isdigit(c));
+	printf("%d\n", ft_isdigit(d));
+}*/

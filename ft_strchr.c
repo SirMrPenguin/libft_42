@@ -6,7 +6,7 @@
 /*   By: joabotel <joabotel@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/08 14:22:36 by joabotel          #+#    #+#             */
-/*   Updated: 2025/04/10 23:09:38 by joabotel         ###   ########.fr       */
+/*   Updated: 2025/04/12 16:27:31 by joabotel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,3 +27,17 @@ char	*ft_strchr(const char *s, int c)
 	}
 	return (NULL);
 }
+/*
+#include <stdio.h>
+int main(void)
+{
+	char str[] = "Hello, world!";
+	char *result;
+
+	result = ft_strchr(str, 'o');
+	if (result)
+		printf("Found: %s\n", result);
+	else
+		printf("Not found\n");
+	return (0);
+}*/
