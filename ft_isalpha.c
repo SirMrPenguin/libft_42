@@ -6,9 +6,11 @@
 /*   By: joabotel <joabotel@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/02 18:15:01 by joabotel          #+#    #+#             */
-/*   Updated: 2025/04/12 16:16:53 by joabotel         ###   ########.fr       */
+/*   Updated: 2025/04/13 14:50:47 by joabotel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isalpha(int c)
 {

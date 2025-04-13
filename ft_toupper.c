@@ -6,9 +6,11 @@
 /*   By: joabotel <joabotel@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/04 20:34:59 by joabotel          #+#    #+#             */
-/*   Updated: 2025/04/04 20:35:00 by joabotel         ###   ########.fr       */
+/*   Updated: 2025/04/13 14:50:40 by joabotel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_toupper(int c)
 {

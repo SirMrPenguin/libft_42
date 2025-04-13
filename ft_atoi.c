@@ -6,11 +6,13 @@
 /*   By: joabotel <joabotel@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/04 20:36:43 by joabotel          #+#    #+#             */
-/*   Updated: 2025/04/04 20:36:44 by joabotel         ###   ########.fr       */
+/*   Updated: 2025/04/13 16:39:07 by joabotel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_atoi(char *str)
+#include "libft.h"
+
+int	ft_atoi(const char *str)
 {
 	int	nb;
 	int	min;
@@ -18,9 +20,7 @@ int	ft_atoi(char *str)
 	nb = 0;
 	min = 0;
 	while ((*str >= 9 && *str <= 13) || (*str == ' '))
-	{
 		str++;
-	}
 	if ((*str == '-') || (*str == '+'))
 	{
 		if (*str == '-')
@@ -36,4 +36,11 @@ int	ft_atoi(char *str)
 	if (min % 2 == 0)
 		return (nb);
 	return (-nb);
+}
+/*
+#include <stdio.h>
+
+int	main(int ac, char **av){
+	(void)ac;
+	printf("%d\n", ft_atoi(av[1]));
 }

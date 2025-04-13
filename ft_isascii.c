@@ -6,9 +6,11 @@
 /*   By: joabotel <joabotel@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/04 20:29:45 by joabotel          #+#    #+#             */
-/*   Updated: 2025/04/04 20:29:46 by joabotel         ###   ########.fr       */
+/*   Updated: 2025/04/13 14:50:46 by joabotel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isascii(int c)
 {

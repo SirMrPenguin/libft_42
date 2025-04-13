@@ -6,9 +6,11 @@
 /*   By: joabotel <joabotel@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/02 18:42:26 by joabotel          #+#    #+#             */
-/*   Updated: 2025/04/12 16:18:03 by joabotel         ###   ########.fr       */
+/*   Updated: 2025/04/13 14:50:45 by joabotel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isdigit(int c)
 {

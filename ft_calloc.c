@@ -6,7 +6,7 @@
 /*   By: joabotel <joabotel@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/09 12:46:36 by joabotel          #+#    #+#             */
-/*   Updated: 2025/04/10 17:22:39 by joabotel         ###   ########.fr       */
+/*   Updated: 2025/04/13 14:15:28 by joabotel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,10 +21,7 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	ptr = malloc(nmemb * size);
 	if (!ptr)
 		return (NULL);
-	while (i < nmemb * size)
-	{
-		ptr[i++] = 0;
-	}
+	ft_bzero(ptr, nmemb * size);
 	return (ptr);
 }
 /*

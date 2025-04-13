@@ -6,7 +6,7 @@
 #    By: joabotel <joabotel@student.42porto.com>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/02 18:15:47 by joabotel          #+#    #+#              #
-#    Updated: 2025/04/11 21:10:35 by joabotel         ###   ########.fr        #
+#    Updated: 2025/04/13 15:09:25 by joabotel         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -35,7 +35,6 @@ SRC = 	ft_atoi.c \
 		ft_itoa.c \
 		ft_strmapi.c \
 		ft_split.c \
-		ft_strrchr.c \
 		ft_strdup.c \
 		ft_substr.c \
 		ft_strlcpy.c \
@@ -74,3 +73,6 @@ clean:
 fclean: clean
 	rm -rf $(NAME)
 re: fclean all
+
+so: $(OBJS)
+	$(CC) -nostartfiles -shared -o libft.so $(OBJS)

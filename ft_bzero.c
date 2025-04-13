@@ -6,7 +6,7 @@
 /*   By: joabotel <joabotel@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/09 12:46:44 by joabotel          #+#    #+#             */
-/*   Updated: 2025/04/09 18:47:50 by joabotel         ###   ########.fr       */
+/*   Updated: 2025/04/13 16:19:58 by joabotel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,7 @@
 
 void	ft_bzero(void *s, size_t n)
 {
-	while (n-- > 0)
-		*((unsigned char *)s + n) = 0;
+	ft_memset(s, 0, n);
 }
 /*
 #include <stdio.h>
