@@ -20,3 +20,35 @@ void	ft_lstadd_front(t_list **lst, t_list *new)
 		*lst = new;
 	}
 }
+/*
+#include <stdio.h>
+void print_list(t_list *head)
+{
+    while (head)
+    {
+        printf("%s -> ", (char *)head->content);
+        head = head->next;
+    }
+    printf("NULL\n");
+}
+
+int main(void)
+{
+    t_list *list = NULL;
+    t_list *node1 = ft_lstnew("World");
+    t_list *node2 = ft_lstnew("Hello");
+
+    // Add "World" first (it's currently the only node)
+    ft_lstadd_front(&list, node1);
+    // Then add "Hello" to the front
+    ft_lstadd_front(&list, node2);
+
+    // Expected output: Hello -> World -> NULL
+    printf("List content:\n");
+    print_list(list);
+
+    // Cleanup
+    free(node1);
+    free(node2);
+    return 0;
+}*/
