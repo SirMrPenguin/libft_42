@@ -6,7 +6,7 @@
 /*   By: joabotel <joabotel@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/08 10:57:34 by joabotel          #+#    #+#             */
-/*   Updated: 2025/04/12 15:52:42 by joabotel         ###   ########.fr       */
+/*   Updated: 2025/04/14 18:41:26 by joabotel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,18 +16,18 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
 	t_list	*new_list;
 	t_list	*new_node;
+	void	*content;
 
-	if (!lst)
+	if (!lst || !f || !del)
 		return (NULL);
 	new_list = NULL;
 	while (lst)
 	{
-		if (f)
-			new_node = ft_lstnew(f(lst->content));
-		else
-			new_node = ft_lstnew(lst->content);
+		content = f(lst->content);
+		new_node = ft_lstnew(content);
 		if (!new_node)
 		{
+			del(content);
 			ft_lstclear(&new_list, del);
 			return (NULL);
 		}

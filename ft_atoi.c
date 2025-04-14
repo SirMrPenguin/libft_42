@@ -6,7 +6,7 @@
 /*   By: joabotel <joabotel@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/04 20:36:43 by joabotel          #+#    #+#             */
-/*   Updated: 2025/04/13 16:39:07 by joabotel         ###   ########.fr       */
+/*   Updated: 2025/04/14 18:40:51 by joabotel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,3 +44,4 @@ int	main(int ac, char **av){
 	(void)ac;
 	printf("%d\n", ft_atoi(av[1]));
 }
+*/
