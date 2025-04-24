@@ -6,7 +6,7 @@
 #    By: joabotel <joabotel@student.42porto.com>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/02 18:15:47 by joabotel          #+#    #+#              #
-#    Updated: 2025/04/14 18:09:55 by joabotel         ###   ########.fr        #
+#    Updated: 2025/04/17 17:53:29 by joabotel         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -63,14 +63,12 @@ OBJS_B	= $(SRC_B:.c=.o)
 
 all: $(NAME)
 
-bonus: $(NAME) $(OBJS_B)
-	ar -rcs $(NAME) $(OBJS_B)
-
 $(NAME): $(OBJS)
 	ar -rcs $(NAME) $(OBJS)
+bonus: $(NAME) $(OBJS_B)
+	ar -rcs $(NAME) $(OBJS_B)
 clean:
 	rm -rf $(OBJS) $(OBJS_B)
 fclean: clean
 	rm -rf $(NAME)
 re: fclean all
-

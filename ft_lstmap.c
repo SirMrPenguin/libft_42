@@ -6,7 +6,7 @@
 /*   By: joabotel <joabotel@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/08 10:57:34 by joabotel          #+#    #+#             */
-/*   Updated: 2025/04/14 18:41:26 by joabotel         ###   ########.fr       */
+/*   Updated: 2025/04/24 17:45:46 by joabotel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,3 +36,50 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	}
 	return (new_list);
 }
+
+/*   #include <stdio.h>
+void	print_list(t_list *head)
+{
+	while (head)
+	{
+		printf("%s -> ", (char *)head->content);
+		head = head->next;
+	}
+	printf("NULL\n");
+}
+void	*str_toupper(void *str)
+{
+	if (!str)
+		return (NULL);
+	char	*original = (char *)str;
+	char	*new_str = malloc(ft_strlen(original) + 1);
+	if (!new_str)
+		return (NULL);
+	for (size_t i = 0; original[i]; i++)
+		new_str[i] = ft_toupper(original[i]);
+	new_str[ft_strlen(original)] = '\0';
+	return (new_str);
+}
+
+int	main(){
+
+	t_list	*list = NULL;
+	t_list	*node1 = ft_lstnew("World");
+	t_list	*node2 = ft_lstnew("Hello");
+	t_list	*node3 = ft_lstnew("42");
+	t_list	*node4 = ft_lstnew("Porto");
+
+	ft_lstadd_back(&list, node1);
+	ft_lstadd_front(&list, node2);
+	ft_lstadd_back(&list, node3);
+	ft_lstadd_back(&list, node4);
+
+	printf("Original list:\n");
+	print_list(list);
+
+	t_list *mapped_list = ft_lstmap(list, str_toupper, free);
+	printf("Mapped list:\n");
+	print_list(mapped_list);
+	printf("List size: %d\n", ft_lstsize(list));
+}  
+ */

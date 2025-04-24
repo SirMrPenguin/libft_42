@@ -6,7 +6,7 @@
 /*   By: joabotel <joabotel@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/10 18:31:30 by joabotel          #+#    #+#             */
-/*   Updated: 2025/04/10 19:46:17 by joabotel         ###   ########.fr       */
+/*   Updated: 2025/04/15 17:11:16 by joabotel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,11 +43,11 @@ static int	to_trim(const char *set, char c)
 	}
 	return (0);
 }
-/*
-#include <stdio.h>
+
+/* #include <stdio.h>
 int	main(){
-	const char *s1 = "aabbababHello, World!bbabaab";
-	const char *s2 = "ab";
+	const char *s1 = "";
+	const char *s2 = "";
 	const char *s3 = ft_strtrim(s1, s2);
 	printf("%s\n", s3);
-}*/
+} */

@@ -6,7 +6,7 @@
 /*   By: joabotel <joabotel@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/11 21:00:09 by joabotel          #+#    #+#             */
-/*   Updated: 2025/04/14 18:41:48 by joabotel         ###   ########.fr       */
+/*   Updated: 2025/04/24 17:46:05 by joabotel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,7 +72,7 @@ char	**ft_split(char const *s, char c)
 	arr[j] = 0;
 	return (arr);
 }
-/*
+/* 
 #include <stdio.h>
 int	main(int ac, char **av)
 {
@@ -85,4 +85,4 @@ int	main(int ac, char **av)
 		i++;
 	}
 	
-}*/
+} */

@@ -6,10 +6,11 @@
 /*   By: joabotel <joabotel@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/04 20:29:57 by joabotel          #+#    #+#             */
-/*   Updated: 2025/04/05 12:51:28 by joabotel         ###   ########.fr       */
+/*   Updated: 2025/04/15 18:14:01 by joabotel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <unistd.h>
+
+#include "libft.h"
 
 void	ft_putchar_fd(char c, int fd)
 {

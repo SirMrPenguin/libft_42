@@ -6,7 +6,7 @@
 /*   By: joabotel <joabotel@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/05 14:43:48 by joabotel          #+#    #+#             */
-/*   Updated: 2025/04/14 18:41:18 by joabotel         ###   ########.fr       */
+/*   Updated: 2025/04/15 14:46:53 by joabotel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,16 +38,12 @@ int main(void)
     t_list *node1 = ft_lstnew("World");
     t_list *node2 = ft_lstnew("Hello");
 
-    // Add "World" first (it's currently the only node)
     ft_lstadd_front(&list, node1);
-    // Then add "Hello" to the front
     ft_lstadd_front(&list, node2);
 
-    // Expected output: Hello -> World -> NULL
     printf("List content:\n");
     print_list(list);
 
-    // Cleanup
     free(node1);
     free(node2);
     return 0;
